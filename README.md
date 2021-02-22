@@ -8,7 +8,7 @@
 
 ## Схема взаимодействия моделей
 
-![Схема взаимодействия](./images/elementsPageModel.png "Схема взаимодействия")
+![Схема взаимодействия](./images/elementsControllerModel.png "Схема взаимодействия")
 
 # Getting Started with Create React App
 
