@@ -12,6 +12,6 @@ export const ChangeStatusFx = createEffect<types.ChangeStatusArgs, types.Element
     }
 );
 
-export const $elemets = createStore<types.Element[]>([]);
+export const $elements = createStore<types.Element[]>([]);
 export const $filters = createStore<types.Filter[]>([]);
 export const $elementsFiltered = createStore<types.Element[]>([]);

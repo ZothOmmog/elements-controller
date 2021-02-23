@@ -4,23 +4,23 @@ import * as model from './elementsModel';
 
 forward({
     from: model.FetchElementsFx.doneData,
-    to: model.$elemets,
+    to: model.$elements,
 });
 
 forward({
     from: model.ChangeStatusFx.doneData,
-    to: model.$elemets,
+    to: model.$elements,
 });
 
 sample({
     source: model.$filters,
-    clock: model.$elemets,
+    clock: model.$elements,
     target: model.$elementsFiltered,
     fn: getFilteredElements,
 });
 
 sample({
-    source: model.$elemets,
+    source: model.$elements,
     clock: model.$filters,
     target: model.$elementsFiltered,
     fn: (elements, filters) => getFilteredElements(filters, elements),
