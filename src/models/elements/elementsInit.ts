@@ -8,7 +8,7 @@ forward({
 });
 
 forward({
-    from: model.ChangeStatusFx.doneData,
+    from: model.changeStatusFx.doneData,
     to: model.$elements,
 });
 
