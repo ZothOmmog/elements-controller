@@ -3,7 +3,7 @@ import { changeStatus, getElements } from '../../api/elements';
 import { getNewStatus } from '../../helpers/getNewStatus';
 import * as types from './elementsTypes';
 
-export const FetchElementsFx = createEffect<unknown, types.Element[]>(
+export const fetchElementsFx = createEffect<unknown, types.Element[]>(
     async () => await getElements()
 );
 export const ChangeStatusFx = createEffect<types.ChangeStatusArgs, types.Element[]>(

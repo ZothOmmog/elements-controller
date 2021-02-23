@@ -3,7 +3,7 @@ import { getFilteredElements } from '../../helpers/getFilteredElements';
 import * as model from './elementsModel';
 
 forward({
-    from: model.FetchElementsFx.doneData,
+    from: model.fetchElementsFx.doneData,
     to: model.$elements,
 });
 
